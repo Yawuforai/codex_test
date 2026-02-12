@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="grid-overlay" aria-hidden="true"></div>
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#">
@@ -21,6 +22,7 @@
         </a>
 
         <nav class="nav-links">
+          <a href="#story" data-i18n="nav.story">故事</a>
           <a href="#product" data-i18n="nav.product">产品</a>
           <a href="#traction" data-i18n="nav.traction">增长</a>
           <a href="#use-cases" data-i18n="nav.useCases">药企场景</a>
@@ -40,13 +42,13 @@
         <section class="hero section-grid">
           <div>
             <p class="eyebrow" data-i18n="hero.eyebrow">FRONTIER AI FOR ONCOLOGY DATA OPS</p>
-            <h1 data-i18n="hero.title">面向药企与医疗机构的 Agent 治理肿瘤专病数据库</h1>
+            <h1 data-i18n="hero.title">把肿瘤自由文本，转化为药企可执行的增长引擎</h1>
             <p class="hero-sub" data-i18n="hero.subtitle">
-              从自由文本到结构化数据，再到自动化分析，全链路可审计、可运营、可规模化，打造下一代肿瘤真实世界数据引擎。
+              OncoAgent 以 Agent 治理框架驱动端到端数据流程：自由文本解析、结构化沉淀、自动化分析与可追溯证据链，帮助药企从“数据收集”迈向“策略执行”。
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="#contact" data-i18n="hero.primaryCta">申请试点</a>
-              <a class="btn btn-ghost" href="#traction" data-i18n="hero.secondaryCta">查看商业进展</a>
+              <a class="btn btn-ghost" href="#story" data-i18n="hero.secondaryCta">阅读完整叙事</a>
             </div>
             <div class="hero-stats">
               <article>
@@ -73,7 +75,29 @@
               <li data-i18n="panel.items.2">分钟级自动产出队列分析与疗效洞察</li>
               <li data-i18n="panel.items.3">证据链可追溯与专家复核闭环</li>
             </ul>
+            <div class="pulse-line"></div>
           </aside>
+        </section>
+
+        <section id="story" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="story.eyebrow">THE FULL STORY</p>
+            <h2 data-i18n="story.title">我们不是在做工具，而是在重构肿瘤数据生产力</h2>
+          </div>
+          <div class="card-grid three story-grid">
+            <article class="card">
+              <h3 data-i18n="story.cards.0.title">问题：数据资产沉睡</h3>
+              <p data-i18n="story.cards.0.body">真实世界数据分散在病历自由文本与异构系统中，药企难以高效完成跨中心、跨病种的数据治理。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="story.cards.1.title">拐点：Agent 治理成熟</h3>
+              <p data-i18n="story.cards.1.body">多 Agent 协同、规则化治理与专家复核闭环，使临床数据自动化进入可生产阶段。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="story.cards.2.title">结果：分析直连决策</h3>
+              <p data-i18n="story.cards.2.body">从“收集数据”升级到“持续产出洞察”，直接服务临床开发、医学事务与商业化增长。</p>
+            </article>
+          </div>
         </section>
 
         <section id="product" class="section">
@@ -91,7 +115,7 @@
               <p data-i18n="product.cards.1.body">多 Agent 协同编排，策略版本化管理与质量阈值自动校验。</p>
             </article>
             <article class="card">
-              <h3 data-i18n="product.cards.2.title">Auto Analytics</h3>
+              <h3 data-i18n="product.cards.2.title">Auto Analytics Engine</h3>
               <p data-i18n="product.cards.2.body">自动生成队列画像、治疗路径、复发风险与运营 KPI 看板。</p>
             </article>
             <article class="card">
@@ -104,7 +128,7 @@
         <section id="traction" class="section">
           <div class="section-head">
             <p class="eyebrow" data-i18n="traction.eyebrow">INVESTOR SNAPSHOT</p>
-            <h2 data-i18n="traction.title">为路演场景设计的增长与交付指标</h2>
+            <h2 data-i18n="traction.title">增长不止是数据规模，更是可复制交付能力</h2>
           </div>
           <div class="card-grid three">
             <article class="card metric-card">

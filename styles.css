@@ -518,3 +518,87 @@ h1 {
     display: none;
   }
 }
+
+.grid-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(102, 147, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(102, 147, 255, 0.08) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: radial-gradient(circle at 50% 30%, black 35%, transparent 78%);
+  z-index: -2;
+  animation: gridShift 22s linear infinite;
+}
+
+.story-grid .card {
+  background: linear-gradient(180deg, #ffffff 0%, #f4f8ff 100%);
+}
+
+.pulse-line {
+  height: 3px;
+  margin-top: 18px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(41, 92, 230, 0.2), rgba(41, 92, 230, 1), rgba(41, 92, 230, 0.2));
+  background-size: 200% 100%;
+  animation: flowLine 2.4s linear infinite;
+}
+
+main section {
+  animation: sectionRise 0.7s ease both;
+}
+
+main section:nth-of-type(2) {
+  animation-delay: 0.08s;
+}
+
+main section:nth-of-type(3) {
+  animation-delay: 0.12s;
+}
+
+main section:nth-of-type(4) {
+  animation-delay: 0.16s;
+}
+
+main section:nth-of-type(5) {
+  animation-delay: 0.2s;
+}
+
+main section:nth-of-type(6) {
+  animation-delay: 0.24s;
+}
+
+@keyframes flowLine {
+  from {
+    background-position: 0% 0;
+  }
+  to {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes sectionRise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes gridShift {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(48px);
+  }
+}
+
+@media (max-width: 860px) {
+  .grid-overlay {
+    display: none;
+  }
+}
