@@ -1,12 +1,12 @@
 :root {
-  --bg: #06080b;
-  --surface: #0d1117;
-  --surface-2: #121823;
-  --border: #273140;
-  --text: #edf2f7;
-  --muted: #98a5b6;
-  --primary: #6b8dff;
-  --primary-deep: #1e2f66;
+  --bg: #f6f9ff;
+  --surface: #ffffff;
+  --surface-2: #eef4ff;
+  --border: #d7e4ff;
+  --text: #10203d;
+  --muted: #5f7292
+  --primary: #2e6bff;
+  --primary-strong: #1f54d6;
 }
 
 * {
@@ -34,11 +34,12 @@ body {
   margin-top: 18px;
   padding: 14px 20px;
   border: 1px solid var(--border);
-  background: rgba(6, 8, 11, 0.95);
+  background: rgba(255, 255, 255, 0.92);
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 14px;
+  backdrop-filter: blur(6px);
 }
 
 .brand {
@@ -53,9 +54,9 @@ body {
 .brand-mark {
   width: 34px;
   height: 34px;
-  border: 1px solid #3b4b6a;
-  background: #101b31;
-  color: #b9c9ff;
+  border: 1px solid #9eb9ff;
+  background: #edf3ff;
+  color: #295ce2;
   display: grid;
   place-items: center;
   font-size: 0.86rem;
@@ -81,6 +82,7 @@ body {
 .lang-switch {
   border: 1px solid var(--border);
   display: inline-flex;
+  background: #f3f7ff;
 }
 
 .lang-btn {
@@ -92,8 +94,8 @@ body {
 }
 
 .lang-btn.active {
-  background: #152141;
-  color: #d4dfff;
+  background: #dce8ff;
+  color: #1f4fbf;
 }
 
 .section-grid {
@@ -107,7 +109,7 @@ body {
   margin: 0 0 10px;
   font-size: 0.78rem;
   letter-spacing: 0.12em;
-  color: #8696ab;
+  color: #6c82ab;
   text-transform: uppercase;
 }
 
@@ -149,13 +151,17 @@ h1 {
 }
 
 .btn-primary {
-  border-color: #8ca6ff;
+  border-color: #2e6bff;
   background: var(--primary);
-  color: #081022;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: var(--primary-strong);
 }
 
 .btn-outline {
-  border-color: #364b76;
+  border-color: #9bb7ff;
 }
 
 .btn-ghost {
@@ -185,7 +191,7 @@ h1 {
 
 .hero-stats strong {
   display: block;
-  color: #d3deff;
+  color: #1746b8;
   font-size: 1.2rem;
 }
 
@@ -201,7 +207,7 @@ h1 {
 .hero-panel h2 {
   margin: 0;
   font-size: 0.9rem;
-  color: #94abff;
+  color: #2f63d8;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -258,7 +264,7 @@ h1 {
 
 .metric-card strong {
   display: block;
-  color: #c3d3ff;
+  color: #2455cc;
   font-size: 1.6rem;
   margin-bottom: 8px;
 }
@@ -279,7 +285,7 @@ h1 {
 }
 
 .timeline span {
-  color: #9db3ff;
+  color: #2963ea;
   font-size: 1.1rem;
   font-weight: 700;
 }
@@ -311,7 +317,7 @@ h1 {
 
 .metric-panel h3 {
   margin: 0 0 6px;
-  color: #cfdbff;
+  color: #275dd6;
 }
 
 .metric-panel span {
@@ -321,8 +327,8 @@ h1 {
 .cta {
   text-align: center;
   padding: 34px;
-  background: #0e1420;
-  border-color: #2e3d59;
+  background: #edf4ff;
+  border-color: #c7dbff;
 }
 
 .cta h2 {
