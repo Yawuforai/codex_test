@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OncoAgent | Agent-Governed Oncology Data Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-overlay" aria-hidden="true"></div>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#">
+          <span class="brand-mark">OA</span>
+          <span class="brand-text">OncoAgent</span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#story" data-i18n="nav.story">故事</a>
+          <a href="#product" data-i18n="nav.product">产品</a>
+          <a href="#traction" data-i18n="nav.traction">增长</a>
+          <a href="#use-cases" data-i18n="nav.useCases">药企场景</a>
+          <a href="#about" data-i18n="nav.about">团队</a>
+        </nav>
+
+        <div class="topbar-actions">
+          <div class="lang-switch" role="group" aria-label="Language switch">
+            <button class="lang-btn active" data-lang="zh">中文</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <a class="btn btn-outline" href="#contact" data-i18n="actions.demo">预约演示</a>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero section-grid">
+          <div>
+            <p class="eyebrow" data-i18n="hero.eyebrow">FRONTIER AI FOR ONCOLOGY DATA OPS</p>
+            <h1 data-i18n="hero.title">把肿瘤自由文本，转化为药企可执行的增长引擎</h1>
+            <p class="hero-sub" data-i18n="hero.subtitle">
+              OncoAgent 以 Agent 治理框架驱动端到端数据流程：自由文本解析、结构化沉淀、自动化分析与可追溯证据链，帮助药企从“数据收集”迈向“策略执行”。
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact" data-i18n="hero.primaryCta">申请试点</a>
+              <a class="btn btn-ghost" href="#story" data-i18n="hero.secondaryCta">阅读完整叙事</a>
+            </div>
+            <div class="hero-stats">
+              <article>
+                <strong>95%+</strong>
+                <span data-i18n="hero.stats.accuracy">关键字段抽取准确率</span>
+              </article>
+              <article>
+                <strong>70%</strong>
+                <span data-i18n="hero.stats.time">数据准备周期缩短</span>
+              </article>
+              <article>
+                <strong>24h</strong>
+                <span data-i18n="hero.stats.cycle">分析报告交付周期</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="hero-panel">
+            <h2 data-i18n="panel.title">旗舰产品</h2>
+            <h3 data-i18n="panel.name">OncoAgent Data Fabric</h3>
+            <ul>
+              <li data-i18n="panel.items.0">多源肿瘤病历文本自动解析与标准化</li>
+              <li data-i18n="panel.items.1">Agent 编排治理、阈值控制与质量审计</li>
+              <li data-i18n="panel.items.2">分钟级自动产出队列分析与疗效洞察</li>
+              <li data-i18n="panel.items.3">证据链可追溯与专家复核闭环</li>
+            </ul>
+            <div class="pulse-line"></div>
+          </aside>
+        </section>
+
+        <section id="story" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="story.eyebrow">THE FULL STORY</p>
+            <h2 data-i18n="story.title">我们不是在做工具，而是在重构肿瘤数据生产力</h2>
+          </div>
+          <div class="card-grid three story-grid">
+            <article class="card">
+              <h3 data-i18n="story.cards.0.title">问题：数据资产沉睡</h3>
+              <p data-i18n="story.cards.0.body">真实世界数据分散在病历自由文本与异构系统中，药企难以高效完成跨中心、跨病种的数据治理。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="story.cards.1.title">拐点：Agent 治理成熟</h3>
+              <p data-i18n="story.cards.1.body">多 Agent 协同、规则化治理与专家复核闭环，使临床数据自动化进入可生产阶段。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="story.cards.2.title">结果：分析直连决策</h3>
+              <p data-i18n="story.cards.2.body">从“收集数据”升级到“持续产出洞察”，直接服务临床开发、医学事务与商业化增长。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="product" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="product.eyebrow">PRODUCT CORE</p>
+            <h2 data-i18n="product.title">AI 前沿创业公司的企业级产品能力</h2>
+          </div>
+          <div class="card-grid four">
+            <article class="card">
+              <h3 data-i18n="product.cards.0.title">Text-to-Structure Engine</h3>
+              <p data-i18n="product.cards.0.body">病历、检验、影像、病理等异构文本统一抽取与医学编码。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="product.cards.1.title">Agent Governance Layer</h3>
+              <p data-i18n="product.cards.1.body">多 Agent 协同编排，策略版本化管理与质量阈值自动校验。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="product.cards.2.title">Auto Analytics Engine</h3>
+              <p data-i18n="product.cards.2.body">自动生成队列画像、治疗路径、复发风险与运营 KPI 看板。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="product.cards.3.title">Compliance-by-Design</h3>
+              <p data-i18n="product.cards.3.body">端到端权限审计、脱敏策略、私有化部署与合规治理能力。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="traction" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="traction.eyebrow">INVESTOR SNAPSHOT</p>
+            <h2 data-i18n="traction.title">增长不止是数据规模，更是可复制交付能力</h2>
+          </div>
+          <div class="card-grid three">
+            <article class="card metric-card">
+              <strong>30+</strong>
+              <h3 data-i18n="traction.cards.0.title">生态合作机构</h3>
+              <p data-i18n="traction.cards.0.body">覆盖肿瘤中心、区域医疗集团与科研平台。</p>
+            </article>
+            <article class="card metric-card">
+              <strong>10M+</strong>
+              <h3 data-i18n="traction.cards.1.title">临床文本处理规模</h3>
+              <p data-i18n="traction.cards.1.body">持续扩大高价值肿瘤真实世界数据资产。</p>
+            </article>
+            <article class="card metric-card">
+              <strong>99.9%</strong>
+              <h3 data-i18n="traction.cards.2.title">平台可用性</h3>
+              <p data-i18n="traction.cards.2.body">稳定支撑试点、生产与多中心协同场景。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="workflow" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="workflow.eyebrow">END-TO-END PIPELINE</p>
+            <h2 data-i18n="workflow.title">从自由文本到自动分析的四步闭环</h2>
+          </div>
+          <ol class="timeline">
+            <li>
+              <span>01</span>
+              <div>
+                <h3 data-i18n="workflow.steps.0.title">Data Intake</h3>
+                <p data-i18n="workflow.steps.0.body">统一接入 EMR、LIS、PACS 与随访文本。</p>
+              </div>
+            </li>
+            <li>
+              <span>02</span>
+              <div>
+                <h3 data-i18n="workflow.steps.1.title">Agent Extraction</h3>
+                <p data-i18n="workflow.steps.1.body">基于肿瘤知识图谱完成实体、事件与时间线抽取。</p>
+              </div>
+            </li>
+            <li>
+              <span>03</span>
+              <div>
+                <h3 data-i18n="workflow.steps.2.title">Governed Validation</h3>
+                <p data-i18n="workflow.steps.2.body">规则引擎自动质控，异常样本进入专家复核流程。</p>
+              </div>
+            </li>
+            <li>
+              <span>04</span>
+              <div>
+                <h3 data-i18n="workflow.steps.3.title">Insight Delivery</h3>
+                <p data-i18n="workflow.steps.3.body">快速输出疾病队列洞察、疗效分层与业务决策指标。</p>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <section id="use-cases" class="section">
+          <div class="section-head">
+            <p class="eyebrow" data-i18n="cases.eyebrow">BIOPHARMA FIRST</p>
+            <h2 data-i18n="cases.title">药企优先的真实世界数据应用场景</h2>
+          </div>
+          <div class="card-grid three">
+            <article class="card">
+              <h3 data-i18n="cases.cards.0.title">药企医学与临床团队</h3>
+              <p data-i18n="cases.cards.0.body">用于方案优化、入排标准评估与治疗路径洞察。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="cases.cards.1.title">商业与市场准入团队</h3>
+              <p data-i18n="cases.cards.1.body">输出分层人群、治疗行为与区域差异的决策依据。</p>
+            </article>
+            <article class="card">
+              <h3 data-i18n="cases.cards.2.title">医学研究机构与医院</h3>
+              <p data-i18n="cases.cards.2.body">快速构建专病数据库并提升科研协作效率。</p>
+            </article>
+          </div>
+        </section>
+
+        <section id="about" class="section split">
+          <div>
+            <p class="eyebrow" data-i18n="about.eyebrow">TEAM & VISION</p>
+            <h2 data-i18n="about.title">我们是一家面向全球市场的 AI 前沿创业团队</h2>
+            <p data-i18n="about.body">
+              团队融合肿瘤医学、NLP 与数据工程能力，持续构建 Agent 原生的数据治理基础设施，为药企与医疗机构提供可规模复制的智能平台。
+            </p>
+          </div>
+          <div class="metric-panel">
+            <article>
+              <h3 data-i18n="about.metrics.0.title">产品导向</h3>
+              <span data-i18n="about.metrics.0.body">以交付价值为核心，持续迭代可落地的行业方案。</span>
+            </article>
+            <article>
+              <h3 data-i18n="about.metrics.1.title">技术导向</h3>
+              <span data-i18n="about.metrics.1.body">坚持 Agent 治理、可解释性与可靠性工程。</span>
+            </article>
+            <article>
+              <h3 data-i18n="about.metrics.2.title">商业导向</h3>
+              <span data-i18n="about.metrics.2.body">面向药企关键场景构建长期复利的数据网络效应。</span>
+            </article>
+          </div>
+        </section>
+
+        <section id="contact" class="section cta">
+          <h2 data-i18n="cta.title">准备好把肿瘤数据转化为可执行的业务增长引擎</h2>
+          <p data-i18n="cta.body">联系我们获取白皮书、POC 方案与面向药企的定制演示。</p>
+          <a class="btn btn-primary" href="mailto:contact@oncoagent.ai">contact@oncoagent.ai</a>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
